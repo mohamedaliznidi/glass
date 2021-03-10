@@ -3,3 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  z-index: 1;
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1.5rem);
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.circle1 {
+  height: 20rem;
+  width: 20rem;
+  top: 5%;
+  right: 10%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.4)
+  );
+}
+
+.circle2 {
+  height: 10rem;
+  width: 10rem;
+  bottom: 10%;
+  left: 10%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.3)
+  );
+}
